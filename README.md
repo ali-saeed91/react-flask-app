@@ -9,7 +9,7 @@ Requires python and node.
 3. `pip install pycryptodome`
 4. `cd client && npm install`
 
-<b> The run.py Python file is configured with the react build path which contains the static webpage (template_folder & static_folder), so test with Production </b>
+<b>IMPORTANT: The run.py Python file is configured with the react build path which contains the static webpage (template_folder & static_folder), so test with Production </b>
 
 ## Development
 
@@ -20,5 +20,6 @@ Requires python and node.
 ## Production
 
 1. In the client directory: `npm run build`
-2. After the build finishes: In the root directory: `python run.py`
-3. Go to [http://localhost:5000/](http://localhost:5000/)
+2. After the build finishes: In the root directory: `python start_db.py`
+3. After the build finishes: In the root directory: `python run.py`
+4. Go to [http://localhost:5000/](http://localhost:5000/)
